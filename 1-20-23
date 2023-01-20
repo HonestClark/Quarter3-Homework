@@ -1,0 +1,35 @@
+/**
+ * write a description of class polymorphisim here.
+ * 
+ * @author ( Evan McCarty)
+ * @version ( a version number or a date) 
+ * Definition of polymorphisim in java - many forms
+ * Why: Preserve code, and reuse code.
+ */
+public class Polymorphisim{
+    public void mammal(){
+        System.out.println("The mammals have Mammarian glands");
+    }
+}
+
+public class DrewCollins extends Polymorphisim{
+    public void mammal(){
+        System.out.println("Is a mammal");
+    }
+}
+
+public class LukeMurry extends Polymorphisim{
+    public void mammal(){
+        System.out.println("Not a mammal");
+    }
+}
+
+public class MainSpecies{
+    public static void main(String[] args){
+        Polymorphism myPolymorphisim = new Polymorphisim();
+        Polymorphism myDog = new Dog();
+        Polymorphism mySnail = new Snail();
+        MyPolymorphism.mammal();
+        my.DrewCollins.mammal();
+        my.LukeMurry.mammal();
+}
